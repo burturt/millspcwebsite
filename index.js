@@ -48,6 +48,6 @@ app.get("*", (req, res) => {
 
 
 
-app.listen(100);
+app.listen(process.env.PORT || 3000);
 require("dotenv").config();
 module.exports = app;
